@@ -10,14 +10,14 @@ export default function Create() {
     
   }
   return (
-    <div>
+    <div className="pt-12">
       <input
         type="text"
         placeholder="Enter the Task"
-        className="w-[300px] p-[10px] fn"
+        className="w-[300px] p-[10px] font-serif outline-black border-b-[2px] rounded-sm"
         onChange={(e) => setTask(e.target.value)}
       />
-      <button type="button" onClick={handleAdd}>
+      <button type="button" onClick={handleAdd} className="p-[10px] bg-black text-white cursor-pointer">
         Add
       </button>
     </div>
